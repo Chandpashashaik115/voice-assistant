@@ -1,3 +1,8 @@
 libssl-dev 
 libasound2
 libatlas3-base
+build-essential 
+ca-certificates
+libasound2-dev
+libssl-dev
+wget
