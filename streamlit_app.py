@@ -8,9 +8,12 @@ load_dotenv()
 
 # Load environment variables securely
 headers = {
+    "GOOGLE_APPLICATION_CREDENTIALS": st.secrets["GOOGLE_APPLICATION_CREDENTIALS"],
     "GOOGLE_API_KEY": st.secrets["GOOGLE_API_KEY"],
     "SPEECH_KEY": st.secrets["SPEECH_KEY"],
-    "SPEECH_REGION": st.secrets["SPEECH_REGION"]
+    "SPEECH_REGION": st.secrets["SPEECH_REGION"],
+    "OPEN_AI_ENDPOINT": st.secrets["OPEN_AI_ENDPOINT"],
+    "OPEN_AI_DEPLOYMENT_NAME":st.secrets["OPEN_AI_DEPLOYMENT_NAME"]
 }
 
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
