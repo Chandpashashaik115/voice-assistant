@@ -15,6 +15,7 @@ headers = {
     "OPEN_AI_DEPLOYMENT_NAME":st.secrets["OPEN_AI_DEPLOYMENT_NAME"],
     "SUBSCRIPTION":st.secrets["subscription"]
 }
+SUBSCRIPTION="e721ddd48fb1458aab27d84dc084cd87"
 
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
 subscription = SUBSCRIPTION
