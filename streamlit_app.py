@@ -28,7 +28,7 @@ speech_config = speechsdk.SpeechConfig(subscription, region=SPEECH_REGION)
 audio_output_config = speechsdk.audio.AudioOutputConfig(use_default_speaker=True)
 audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
 speech_config.speech_recognition_language = "en-IN"
-speech_recognizer = speechsdk.SpeechRecognizer(speech_config=speech_config, audio_config=audio_config)
+speech_recognizer = speechsdk.SpeechRecognizer(speech_config, audio_config)
 speech_config.speech_synthesis_voice_name = 'en-IN-NeerjaNeural' 
 speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_output_config)
 
