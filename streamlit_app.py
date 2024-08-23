@@ -11,6 +11,13 @@ SPEECH_KEY = os.environ.get('SPEECH_KEY')
 SPEECH_REGION = os.environ.get('SPEECH_REGION')
 GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
 
+headers={
+    "SPEECH_KEY" = st.secrets['SPEECH_KEY']
+    "GOOGLE_API_KEY" = st.secrets['GOOGLE_API_KEY']
+    "SPEECH_REGION" = st.secrets['SPEECH_REGION']
+}
+
+
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
 speech_config = speechsdk.SpeechConfig(subscription=SPEECH_KEY, region=SPEECH_REGION)
 audio_output_config = speechsdk.audio.AudioOutputConfig(use_default_speaker=True)
