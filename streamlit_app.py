@@ -8,7 +8,6 @@ load_dotenv()
 
 # Load environment variables securely
 headers = {
-    "GOOGLE_APPLICATION_CREDENTIALS": st.secrets["GOOGLE_APPLICATION_CREDENTIALS"],
     "GOOGLE_API_KEY": st.secrets["GOOGLE_API_KEY"],
     "SPEECH_KEY": st.secrets["SPEECH_KEY"],
     "SPEECH_REGION": st.secrets["SPEECH_REGION"],
