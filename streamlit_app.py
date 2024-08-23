@@ -13,7 +13,7 @@ headers = {
     "SPEECH_REGION": st.secrets["SPEECH_REGION"],
     "OPEN_AI_ENDPOINT": st.secrets["OPEN_AI_ENDPOINT"],
     "OPEN_AI_DEPLOYMENT_NAME":st.secrets["OPEN_AI_DEPLOYMENT_NAME"],
-    "SUBSCRIPTION":st.secrets["subscription"]
+    "SUBSCRIPTION":st.secrets["SUBSCRIPTION"]
 }
 SUBSCRIPTION="e721ddd48fb1458aab27d84dc084cd87"
 
