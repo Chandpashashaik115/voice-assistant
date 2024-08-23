@@ -16,6 +16,11 @@ headers = {
     "SUBSCRIPTION":st.secrets["SUBSCRIPTION"]
 }
 SUBSCRIPTION="e721ddd48fb1458aab27d84dc084cd87"
+OPEN_AI_ENDPOINT = "https://sashanknjsopenai.openai.azure.com/"
+OPEN_AI_DEPLOYMENT_NAME = "openAI"
+SPEECH_KEY = "e721ddd48fb1458aab27d84dc084cd87"
+SPEECH_REGION = "westeurope"
+GOOGLE_API_KEY = "AIzaSyDMJ8lKEGRRzV1XRK3nKhinxqsItLbK3Pk"
 
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
 subscription = SUBSCRIPTION
