@@ -22,7 +22,7 @@ OPEN_AI_ENDPOINT= st.secrets["OPEN_AI_ENDPOINT"]
 OPEN_AI_DEPLOYMENT_NAME=st.secrets["OPEN_AI_DEPLOYMENT_NAME"]
 SUBSCRIPTION=st.secrets["SPEECH_KEY"]
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
-speech_config = speechsdk.SpeechConfig(subscription=SUBSCRIPTION, region=SPEECH_REGION)
+speech_config = speechsdk.SpeechConfig(subscription=SPEECH_KEY, region=SPEECH_REGION)
 audio_output_config = speechsdk.audio.AudioOutputConfig(use_default_speaker=True)
 audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
 speech_config.speech_recognition_language = "en-IN"
