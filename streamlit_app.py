@@ -13,6 +13,7 @@ headers = {
     "SPEECH_REGION": st.secrets["SPEECH_REGION"],
     "OPEN_AI_ENDPOINT": st.secrets["OPEN_AI_ENDPOINT"],
     "OPEN_AI_DEPLOYMENT_NAME":st.secrets["OPEN_AI_DEPLOYMENT_NAME"]
+    "subscription":st.secrets["subscription"]
 }
 
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
