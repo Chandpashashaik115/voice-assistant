@@ -18,7 +18,6 @@ headers = {
 
 
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
-subscription = SUBSCRIPTION
 speech_config = speechsdk.SpeechConfig(subscription, region=SPEECH_REGION)
 audio_output_config = speechsdk.audio.AudioOutputConfig(use_default_speaker=True)
 audio_config = speechsdk.audio.AudioConfig(use_default_microphone=True)
