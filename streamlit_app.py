@@ -7,14 +7,10 @@ import streamlit as st
 load_dotenv()
 
 # Load environment variables securely
-SPEECH_KEY = os.environ.get('SPEECH_KEY')
-SPEECH_REGION = os.environ.get('SPEECH_REGION')
-GOOGLE_API_KEY = os.environ.get('GOOGLE_API_KEY')
-
 headers = {
-    "GOOGLE_API_KEY": os.environ.get("GOOGLE_API_KEY"),
-    "SPEECH_KEY": os.environ.get("SPEECH_KEY"),
-    "SPEECH_REGION": os.environ.get("SPEECH_REGION")
+    "GOOGLE_API_KEY": st.secrets["GOOGLE_API_KEY"],
+    "SPEECH_KEY": st.secrets["SPEECH_KEY"],
+    "SPEECH_REGION": st.secrets["SPEECH_REGION"]
 }
 
 # Configure speech recognition and synthesis using Azure Cognitive Services Speech SDK
