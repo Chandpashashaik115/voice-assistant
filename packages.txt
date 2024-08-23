@@ -1,1 +1,3 @@
+libssl-dev 
 libasound2
+libatlas3-base
